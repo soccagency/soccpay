@@ -1,5 +1,5 @@
 {
-  "name": "soccpay",
+  "name": "@soccagency/soccpay",
   "version": "1.0.0",
   "description": "SoccPay JavaScript SDK for Node.js and Browser",
   "main": "dist/index.js",

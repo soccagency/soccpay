@@ -19,17 +19,17 @@ A comprehensive JavaScript SDK for integrating SoccPay payment processing into y
 
 ### NPM (Recommended)
 ```bash
-npm install soccpay
+npm install @soccagency/soccpay
 ```
 
 ### Yarn
 ```bash
-yarn add soccpay
+yarn add @soccagency/soccpay
 ```
 
 ### CDN
 ```html
-<script src="https://unpkg.com/soccpay@latest/dist/index.min.js"></script>
+<script src="https://unpkg.com/@soccagency/soccpay@latest/dist/index.min.js"></script>
 ```
 
 ## ⚡ Quick Start
@@ -512,8 +512,8 @@ MIT License - ver [LICENSE](LICENSE) para más detalles.
 ## 📞 Soporte
 
 - 📧 Email: support@soccpay.com
-- 📖 Documentación: [https://docs.soccpay.com](https://docs.soccpay.com)
-- 🐛 Issues: [GitHub Issues](https://github.com/tu-usuario/soccpay/issues)
+- 📖 Documentación: [https://docs.soccpay.com](https://soccpay.com/docs)
+- 🐛 Issues: [GitHub Issues](https://github.com/soccagency/soccpay/issues)
 
 ## 📋 Changelog
 
