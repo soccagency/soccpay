@@ -1,6 +1,5 @@
 /**
  * Basic Payment Example
- * Equivalent to example.php from the PHP SDK
  */
 
 const { SoccPay, Payment, Amount, Payer, Transaction, RedirectUrls } = require('../src/index');

@@ -1,6 +1,5 @@
 /**
  * Success Handler Example
- * Equivalent to example-success.php from the PHP SDK
  * 
  * This example shows how to handle the success callback from SoccPay
  * when used in a Node.js/Express server environment
