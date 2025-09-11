@@ -183,13 +183,15 @@ class Payment extends SoccPayModel {
     const paymentMethod = this.payer.getPaymentMethod();
     const successUrl = this.redirectUrls.getSuccessUrl();
     const cancelUrl = this.redirectUrls.getCancelUrl();
+    const ipnWebhook = this.redirectUrls.getIpnWebhook();
 
     const payload = {
       payer: paymentMethod,
       amount: amount.getTotal(),
       currency: amount.getCurrency(),
       successUrl: successUrl,
-      cancelUrl: cancelUrl
+      cancelUrl: cancelUrl,
+      ipnWebhook: ipnWebhook
     };
 
     const headers = {

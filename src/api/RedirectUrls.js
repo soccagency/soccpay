@@ -12,6 +12,27 @@ class RedirectUrls extends SoccPayModel {
   }
 
   /**
+   * Set the ipn webhook URL
+   * @param {string} url - The ipn webhook URL
+   * @returns {RedirectUrls} This instance for chaining
+   */
+  setIpnWebhook(url) {
+    if (!this.isValidUrl(url)) {
+      throw new Error('Success URL must be a valid HTTP/HTTPS URL');
+    }
+    this.ipnWebhook = url;
+    return this;
+  }
+
+  /**
+   * Get the ipn webhook URL
+   * @returns {string} The ipn webhook URL
+   */
+  getIpnWebhook() {
+    return this.ipnWebhook;
+  }
+
+  /**
    * Set the success URL
    * @param {string} url - The success redirect URL
    * @returns {RedirectUrls} This instance for chaining

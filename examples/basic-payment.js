@@ -25,7 +25,8 @@ async function createPayment() {
     // Create RedirectUrls Object
     const redirectUrls = soccPay.createRedirectUrls()
       .setSuccessUrl('http://your-merchant-domain.com/success') // success url - the merchant domain page, to redirect after successful payment
-      .setCancelUrl('http://your-merchant-domain.com/cancel'); // cancel url - the merchant domain page, to redirect after cancellation of payment
+      .setCancelUrl('http://your-merchant-domain.com/cancel') // cancel url - the merchant domain page, to redirect after cancellation of payment
+      .setIpnWebhook('http://your-merchant-domain.com/ipn'); // ipn webhook url - the merchant domain page, to receive IPN notifications
 
     // Create Payment Object
     const payment = soccPay.createPayment()
